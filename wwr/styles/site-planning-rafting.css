@@ -18,11 +18,11 @@ Fonts are separated by a & */
   --paragraph-font: Arial , Times New Roman, Trebuchet MS;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: #A0EBD4; /* headlines on a colored background */ 
+  --headline-color-on-white: #A0EBD4;  /* headlines on a white background */ 
+  --headline-color-on-color: #396E94; /* headlines on a colored background */ 
   --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #A0EBD4; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
+  --paragraph-color-on-color: #396E94; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #B7C3EB  ;
   --nav-link-color: #396E94;
   --nav-background-color: #EBD394;
   --nav-hover-link-color: #A0EBD4;

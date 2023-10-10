@@ -1,0 +1,23 @@
+body {
+    max-width: 1000px;
+    background-color: pink;
+    margin: 0 auto;
+}
+main {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+.title:hover {
+ color: black;
+}
+.title {
+    color: white;
+}
+.quote {
+    color: white;
+   }
+ol {
+    text-align: left;
+    
+}

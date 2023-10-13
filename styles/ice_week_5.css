@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    
+}
+.hero {
+    margin: 0;
+    display: grid;
+}
+.hero_img {
+    width: 100%;
+    margin: 0;
+}
+.photos {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    background-color: grey;
+}
+.circles {
+    width: 20%;
+    border: 4px solid black;
+    border-radius : 50%;
+}
+

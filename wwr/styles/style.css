@@ -1,21 +1,46 @@
-.content {
+#content {
     max-width: 1600px;
     margin: 0 auto;
 }
 body {
     background-color: #396E94;
-    ;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: "Courier New";
+    font-size: 2em;
+}
+h2 {
+    font-family: "Courier New";
+    font-size: 1.75em;
+    margin: 0;
+}
+h4 {
+    font-family: "Courier New";
+    font-size: 1.25em;
+}
+p {
+    font-family: Arial , "Times New Roman", "Trebuchet MS";
+    font-size: .8em;
+    line-height: 1.5em;
+}
+a {
+    font-family: Arial , "Times New Roman", "Trebuchet MS";
+    font-size: 18px;
 }
 header {
-    text-align: center;
     margin: 0 auto;
     background-color: #B7C3EB;
 }
 .logo {
     width: 80px;
 }
+#logo_link {
+    padding-top: 5px;
+}
 nav {
-    text-align: center;
     margin: 0 auto;
 }
 nav a:hover {
@@ -23,7 +48,7 @@ nav a:hover {
     color: black;
 }
 nav a {
-    padding:1em;
+    padding: 35px;
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
@@ -33,58 +58,83 @@ nav a {
     text-align: center;
     margin: 0 auto;
 }
-.hero_img {
+#hero_img {
     width: 100%;
 }
-.hero_msg h1, .hero_msg h4 {
+#hero_msg h1, .hero_msg h4 {
     text-align: center;
     color: white;
+}
+.home_title {
+    margin-top: 10px;
 }
 .button_box {
     text-align: center;
 }
-.book:hover {
-    background-color: #EBD394;
-    color: black;
-}
-.book {
-    padding:1em;
-    min-width: 120px;
+.book, .join {
+    padding: 15px 30px;
+    margin: 20px auto 50px auto;
     text-decoration: none;
     padding: 10px;
     color: #A0EBD4;
+    border-radius: 5px;
+}
+.book:hover, .join:hover {
+    background-color: #EBD394;
+    color: black;
+}
+main section img {
+    box-sizing: border-box;
+}
+.rivers_card, .camping_card, .rapids_card {
+    margin: 200px 0;
+}
+.card_img {
+    border: solid black;
+}
+.rivers_card .card_img {
+    margin: 9px;
 }
 .icon {
     width: 80px ;
+    padding-top: 10px;
 }
-.join:hover {
-    background-color: #EBD394;
-    color: black;
-}
-.join {
-    padding:1em;
-    min-width: 120px;
-    text-decoration: none;
-    padding: 10px;
-    color: #A0EBD4;
-}
-main {
+main section {
     text-align: center;
 }
-.background {
+#background {
     height: 725px;
+    background-color: #AADAEA;
+}
+.mountains {
+    margin: 100px 0;
+}
+.msg {
+    padding: 35px;
+    background-color: #B7C3EB;
+}
+.msg p {
+    padding-bottom: 15px;
+}
+.join {
+    color: #396E94;
 }
 footer {
     background-color: #B7C3EB;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
-.footer:hover {
+footer p a:hover {
     text-decoration: underline;
 }
-.footer {
+footer {
     color: #396E94;
     text-decoration: none;
 }
-.footer a {
+footer a {
     color: #396E94;
     text-decoration: none;
+}
+footer .social img {
+    padding-top: 15px;
 }

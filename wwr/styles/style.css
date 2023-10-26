@@ -26,12 +26,8 @@ p {
     font-size: .8em;
     line-height: 1.5em;
 }
-a {
-    font-family: Arial , "Times New Roman", "Trebuchet MS";
-    font-size: 18px;
-}
 header {
-    margin: 0 auto;
+    
     background-color: #B7C3EB;
     display: grid;
     grid-template-columns: 150px auto;
@@ -48,20 +44,18 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+nav a {
+    text-align: center;
+    padding: 35px;
+    text-decoration: none;
+    color: #396E94;
+}
 nav a:hover {
     background-color: #EBD394;
     color: black;
 }
-nav a {
-    text-align: center;
-    padding: 35px;
-    min-width: 120px;
-    text-decoration: none;
-    color: #396E94;
-}
 #hero {
     text-align: center;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
@@ -77,12 +71,11 @@ nav a {
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
+    margin-top: 100px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
-    color: white;
-    
-    margin-top: 100px;
+    color: white;  
 }
 .home_title {
     margin-top: 10px;

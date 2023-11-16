@@ -54,6 +54,33 @@ nav a:hover {
     background-color: #EBD394;
     color: black;
 }
+.banner {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+#river1 {
+    grid-column: 2/8;
+    width: 100%;
+    grid-row: 1/6;
+}
+#river2 {
+    grid-column: 2/8;
+    width: 100%;
+    grid-row: 1/6;
+}
+.river_name {
+    grid-column: 3/7;
+    background-color: #AADAEA;opacity: 0.75;
+    grid-row: 2/3;
+    width: 100%;
+}
+.river_info {
+    grid-column: 4/6;
+    background-color: #AADAEA;opacity: 0.75;
+    grid-row: 4/5;
+    width: 100%;
+}
 #hero {
     text-align: center;
     display: grid;
@@ -187,7 +214,66 @@ footer a {
 footer .social img {
     padding-top: 15px;
 }
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;
+}
+.moveDown {
+    margin-top: 3em;
+}
+form {
+    margin: 0 auto;
+    width: 400px;
 
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+  .button {
+    padding-left: 90px;
+  }
+  
+  button {
+    margin-left: 0.5em;
+  }
 @media screen and (max-width: 900px) {
     #hero, .home_grid {
         display: block;

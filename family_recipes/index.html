@@ -18,19 +18,40 @@
     </header>
     <main>
         <div class="hero">
-            <img id="family_hero" src="https://placekitten.com/1100/350" alt="">
-            <p id="intro">This Site is a cumulation of recipes from family and friends. It has been compiled by my mother Wendy Lee and used by our family. Feel free to take a look at some delicious desserts, mains, and sides. If you have any questions, direct them to the email in the contact us page. Have a wonderful meal.</p>
+            <div id="family-hero-container">
+                <img id="family_hero" src="./images/Family.jpg" alt="Family Photo">
+            </div>
+            
+            <div class="intro-container">
+                <p id="intro">This Site is a cumulation of recipes from family and friends. It has been compiled by my mother Wendy Lee and used by our family. Feel free to take a look at some delicious desserts, mains, and sides. If you have any questions, direct them to the email in the contact us page. Have a wonderful meal.</p>
+            </div>
         </div>
         <div id="selector">
-            <img id="Entrées" src="./images/Entrées/Cheesy-Sausage-Pasta.jpg" alt="Entrée image">
-            <img id="Desserts" src="./images/Desserts/banana bread.jpeg" alt="Dessert image">
-            <img id="Sides" src="./images/Sides/knotted-dinner-rolls.jpeg" alt="Side image">
+            <div class="grid-element" id="Entrées">
+                <a href="./entrée.html">
+                    <img src="./images/Entrées/Cheesy-Sausage-Pasta.jpg" alt="Entrée image">
+                    <div id="e-text">Entrées</div>
+                </a> 
+            </div>
+            <div class="grid-element" id="Desserts">
+                <a href="./desserts.html">
+                    <img src="./images/Desserts/banana bread.jpeg" alt="Dessert image">
+                    <h2 id="d-text">Desserts</h2>
+                </a>
+            </div>
+            <div class="grid-element" id="Sides">
+                <a href="./sides.html">
+                    <img src="./images/Sides/knotted-dinner-rolls.jpeg" alt="Side image">
+                    <h2 id="s-text">Sides</h2>
+                </a>
+            </div>
+            
         </div>
     </main>
     <footer>
         <p class="footer">Lee Family Recipes - Wendy Lee</p>
-        <p class="footer"><a href="./site_plan.html">Siteplan</a></p>
-        <p class="footer"><a href="./contact_us.html">Contact Us</a></p>
+        <p class="footer"><a href="./site_plan.html">Site Plan</a></p>
+        <p class="footer"><a href="contact_us.html">Contact Us</a></p>
     <div class="social">
         <a href="https://facebook.com" target="_blank">
         <img src="../wwr/wwr_images/facebook.png" alt="facebook icon"></a>

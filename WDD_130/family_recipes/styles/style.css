@@ -10,6 +10,10 @@ a {
   font-family: "Nunito";
   font-size: 1.25em;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 header { 
   background-color: #E74C3C;
   display: grid;
@@ -37,6 +41,7 @@ nav a:hover {
     background-color: #756A68;
     color: black;
 }
+
 .hero {
   margin-top: 100px;
   display: grid;

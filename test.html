@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Text</title>
+    <style>
+        /* Style for the grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* Style for each grid item (image container) */
+        .image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Style for the image */
+        .image-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Style for the text (initially hidden) */
+        .image-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Show text on hover */
+        .image-container:hover .image-text {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <!-- Image 1 -->
+    <div class="image-container">
+        <img src="./wwr/wwr_images/camping.jpg" alt="Image 1">
+        <div class="image-text">Text for Image 1</div>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="image-container">
+        <img src="./wwr/wwr_images/camping.jpg" alt="Image 2">
+        <div class="image-text">Text for Image 2</div>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="image-container">
+        <img src="./wwr/wwr_images/camping.jpg" alt="Image 3">
+        <div class="image-text">Text for Image 3</div>
+    </div>
+</div>
+
+</body>
+</html>

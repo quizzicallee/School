@@ -6,13 +6,10 @@ p {
   font-family: "Nunito";
   font-size: 1.5em;
 }
-a {
-  font-family: "Nunito";
-  font-size: 1.25em;
-}
 body {
   margin: 0;
   padding: 0;
+  background-color: #331D1A;
 }
 header { 
   background-color: #E74C3C;
@@ -36,6 +33,8 @@ nav a {
     padding: 35px;
     text-decoration: none;
     color: #42312F;
+    font-family: "Nunito";
+    font-size: 1.25em;
 }
 nav a:hover {
     background-color: #756A68;
@@ -156,7 +155,57 @@ nav a:hover {
 #Sides:hover #s-text {
   opacity: 1;
 }
+#entrée-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 
+}
+#entrée-grid a {
+  display: block;
+}
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #756A68;
+  color: black;
+}
+.flip-card-back {
+  background-color: #DB776B;
+  color: #42312F;
+  transform: rotateY(180deg);
+}
+.flip-card-back p {
+  font-size: 1em;
+}
+.flip-card-back h1 {
+  font-size: 1.5em;
+}
 footer {
     background-color: #E74C3C;
     padding: 25px 50px;

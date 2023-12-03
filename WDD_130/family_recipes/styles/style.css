@@ -169,9 +169,7 @@ nav a:hover {
   width: 200px;
   height: 200px;
   perspective: 1000px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 15px;
 }
 .flip-card-inner {
   position: relative;

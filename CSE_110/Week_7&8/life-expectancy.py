@@ -5,7 +5,8 @@ count = 0
 year_total = 0
 country_total = 0
 country_count = 0
-
+year_max_life = 0
+year_min_life = 10000
 with open("C:/Users/eawes/OneDrive/Documents/Classes/Repository/CSE_110/Week_7&8/life_expectancy.csv") as info:
     for line in info:
         parts = line.split(",")
@@ -39,10 +40,20 @@ with open("C:/Users/eawes/OneDrive/Documents/Classes/Repository/CSE_110/Week_7&8
         if year == year_input:
             year_total += life_expectancy
             count += 1
+        
+            if life_expectancy > year_max_life:
+                year_max_life = life_expectancy
+                year_max_country = country
+
+            if life_expectancy < year_min_life:
+                year_min_life = life_expectancy
+                year_min_country = country
 
 if count > 0:
     year_average = year_total / count
     print(f'{year_average}')
+    print(f'The maximum life expectancy of {year_input} is {year_max_life} from {year_max_country}.')
+    print(f'The minimum life expectancy of {year_input} is {year_min_life} from {year_min_country}.')
 else:
     print('No data found for given year.')
 

@@ -16,7 +16,7 @@ while action != 5:
         for index , shopping_item in enumerate(shopping_items):
             print(f'{index + 1}.{shopping_item} - ${round(item_prices[index], 2)}')
     elif action == 3:
-        print('Your list is curreently: ')
+        print('Your list is currently: ')
         for index , shopping_item in enumerate(shopping_items):
             print(f'{index + 1}.{shopping_item} - ${round(item_prices[index], 2)}')
         try:
